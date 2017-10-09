@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1> Home page </h1>
+
+	    <a href="/add"> <button> Add Dog </button></a>
+
+	    <% for (var x in dog) { %>
+	        <h3>Name: <%= dog[x].name %> <a href="/display/<%=dog[x].id%>"> View </a> <a href="/delete/<%=dog[x].id%>"> Delete </a></h3>
+	        <hr>
+	    <% } %>
+
+
+
+
+	</body>
+	</html>
